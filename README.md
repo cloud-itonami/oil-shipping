@@ -19,7 +19,7 @@
 | | ここにあるか |
 |---|---|
 | actor が**何を名乗り、何を要求し、どの pipeline を持つと宣言しているか** | **ある**（`actor-manifest.jsonld` 8,535 B / `.well-known/did.json` 730 B） |
-| **gate**（attestation が 7 つ揃わなければ effect を 1 つも出さない判断） | **ある**（`src/oil_shipping/murakumo.cljc`、233 行 / 9,156 B、17 cell） |
+| **gate**（attestation が 7 つ揃わなければ effect を 1 つも出さない判断） | **ある**（`src/oil_shipping/murakumo.kotoba`、233 行 / 9,156 B、17 cell） |
 | タンカーを数えるグラフ、cron を撃つ scheduler、XRPC を受ける server | **無い** |
 | 船・貨物・ターミナルの実データ | **無い** |
 | **risk のデータモデル**（AIS 航跡・制裁リスト・STS 移送・海峡の地理） | **無い**（名前と散文にしか存在しない。後述） |

@@ -17,11 +17,11 @@ superproject の `orgs/cloud-itonami/` に checkout されている前提。
 ## 手順 0 — checkout が gate を持っているか確かめる（ここで 3 本が落ちていた）
 
 ```bash
-ls src/oil_shipping/murakumo.cljc && git log --oneline -1
+ls src/oil_shipping/murakumo.kotoba && git log --oneline -1
 ```
 
 ```
-src/oil_shipping/murakumo.cljc
+src/oil_shipping/murakumo.kotoba
 ddeb3a7 Merge pull request #1 from etzhayyim/rescue/murakumo-wip-20260718
 ```
 
@@ -70,7 +70,7 @@ done
 ```
 oil-upstream     src/oil_upstream/murakumo.cljc (8813B)
 oil-trading      src/oil_trading/murakumo.cljc (8500B)
-oil-shipping     src/oil_shipping/murakumo.cljc (9156B)
+oil-shipping     src/oil_shipping/murakumo.kotoba (9156B)
 ```
 
 **遅れた checkout は、既に着地している仕事を「無い」と測る。** 成熟度計測は
