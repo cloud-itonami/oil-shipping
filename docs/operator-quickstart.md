@@ -84,8 +84,8 @@ pin の前進は west.yml を手で編集せずサーバ側 single-entry commit 
 （skill `west-pin-advance`）:
 
 ```bash
-nbb --classpath ".:scripts/nbb_compat" scripts/west-pin-put.cljs oil-shipping <sha> --dry-run
-nbb --classpath ".:scripts/nbb_compat" scripts/west-pin-put.cljs oil-shipping <sha>
+kbb --backend sci --classpath ".:scripts/nbb_compat" scripts/west-pin-put.cljs oil-shipping <sha> --dry-run
+kbb --backend sci --classpath ".:scripts/nbb_compat" scripts/west-pin-put.cljs oil-shipping <sha>
 printf '%s\n' oil-shipping | xargs west update --fetch smart
 ```
 
@@ -458,7 +458,7 @@ MATCH (t:OilTerminal) WHERE t.terminal_type = 'chokepoint' RETURN t.vertex_id, t
 ```
 
 ```bash
-nbb --classpath "src:/tmp" /tmp/probe-shipping.cljs
+kbb --backend sci --classpath "src:/tmp" /tmp/probe-shipping.cljs
 ```
 
 ```
@@ -485,7 +485,7 @@ cat > /tmp/probe-cols-shipping.cljs <<'EOF'
 (doseq [[k v] (sort-by key m/cell-specs)]
   (println (str (name k) "\t" (first (:collections v)))))
 EOF
-nbb --classpath "src:/tmp" /tmp/probe-cols-shipping.cljs
+kbb --backend sci --classpath "src:/tmp" /tmp/probe-cols-shipping.cljs
 ```
 
 ```
